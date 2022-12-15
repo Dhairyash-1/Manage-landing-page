@@ -1,0 +1,19 @@
+// css global reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+// color variables
+:root {
+  --Bright-Red: hsl(12, 88%, 59%);
+  --Dark-Blue: hsl(228, 39%, 23%);
+  --DarkGrayish-Blue: hsl(227, 12%, 61%);
+  --VeryDark-Blue: hsl(233, 12%, 13%);
+  --VeryPale-Red: hsl(13, 100%, 96%);
+  --VaryLight-Gray: hsl(0, 0%, 98%);
+}
