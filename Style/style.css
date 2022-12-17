@@ -22,6 +22,58 @@ html {
   --VaryLight-Gray: hsl(0, 0%, 98%);
 }
 
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4;
+  line-height: 1.2;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 3.2rem;
+}
+
+.btn {
+  font-size: 1.6rem;
+  background-color: var(--Bright-Red);
+  color: var(--VaryLight-Gray);
+  border: none;
+  outline: none;
+  border-radius: 2.8rem;
+  padding: 1.4rem 2.8rem;
+  box-shadow: 1.5px 3px 8px var(--Bright-Red);
+}
+.btn:hover {
+  transition: all linear 0.3s;
+  opacity: 0.7;
+}
+
+.rightBgPattern {
+  background: url(../images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  position: absolute;
+  top: -7%;
+  right: -10.5%;
+  z-index: -1;
+  width: 55%;
+  height: 715px;
+  transform: rotate(180deg);
+}
+
 .header {
   max-width: 144rem;
   margin: 0 auto;
@@ -56,24 +108,38 @@ html {
   color: var(--DarkGrayish-Blue);
   transition: all linear 0.3s;
 }
-.header .ctabtn .btn {
-  font-size: 1.6rem;
-  background-color: var(--Bright-Red);
-  color: var(--VaryLight-Gray);
-  border: none;
-  outline: none;
-  border-radius: 2.8rem;
-  padding: 1.4rem 2.8rem;
-  box-shadow: 1.5px 3px 8px var(--Bright-Red);
+
+.hero-section {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 5rem 7%;
 }
-.header .ctabtn .btn:hover {
-  transition: all linear 0.3s;
-  opacity: 0.7;
+.hero-section .hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
+}
+.hero-section .hero .hero-description .text-box {
+  max-width: 47rem;
+}
+.hero-section .hero .hero-description .text-box .heading-primary {
+  color: var(--Dark-Blue);
+}
+.hero-section .hero .hero-description .text-box .paragraph {
+  color: var(--DarkGrayish-Blue);
+}
+.hero-section .hero .hero-image img {
+  width: 100%;
 }
 
 @media (max-width: 1150px) {
-  .header {
+  .header,
+.hero-section {
     padding: 4rem 4%;
+  }
+  .heading-primary {
+    font-size: 4.8rem;
   }
 }
 @media (max-width: 1000px) {
