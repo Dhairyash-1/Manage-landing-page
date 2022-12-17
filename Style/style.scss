@@ -79,6 +79,18 @@ body {
   height: 715px;
   transform: rotate(180deg);
 }
+.leftBgPattern {
+  background: url(../images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  position: absolute;
+  top: 68%;
+  left: -24%;
+  z-index: -1;
+  width: 45%;
+  height: 550px;
+}
 
 // ------Header section starts here-------
 
@@ -132,7 +144,7 @@ body {
 .hero-section {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 5rem 7%;
+  padding: 4rem 7%;
 
   .hero {
     display: flex;
@@ -163,7 +175,7 @@ body {
 .about-section {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 4rem 7%;
+  padding: 6rem 7%;
   display: flex;
   gap: 15rem;
   .col1 {
@@ -196,6 +208,17 @@ body {
         color: var(--DarkGrayish-Blue);
       }
     }
+  }
+}
+
+// ------Testimonial section starts here -------
+.testimonial {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 6rem 7%;
+  .heading-secondary {
+    color: var(--Dark-Blue);
+    text-align: center;
   }
 }
 
@@ -238,6 +261,16 @@ body {
   }
   .text-box {
     max-width: 68rem !important;
+  }
+  .about-section {
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 68rem;
+    padding: 6rem 0;
+  }
+  .col1,
+  .col2 {
+    padding: 6rem 7%;
   }
 }
 

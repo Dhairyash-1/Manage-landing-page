@@ -80,6 +80,19 @@ body {
   transform: rotate(180deg);
 }
 
+.leftBgPattern {
+  background: url(../images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  position: absolute;
+  top: 68%;
+  left: -24%;
+  z-index: -1;
+  width: 45%;
+  height: 550px;
+}
+
 .header {
   max-width: 144rem;
   margin: 0 auto;
@@ -124,7 +137,7 @@ body {
 .hero-section {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 5rem 7%;
+  padding: 4rem 7%;
 }
 .hero-section .hero {
   display: flex;
@@ -148,7 +161,7 @@ body {
 .about-section {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 4rem 7%;
+  padding: 6rem 7%;
   display: flex;
   gap: 15rem;
 }
@@ -178,6 +191,16 @@ body {
 }
 .about-section .col2 .row .details .paragraph {
   color: var(--DarkGrayish-Blue);
+}
+
+.testimonial {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 6rem 7%;
+}
+.testimonial .heading-secondary {
+  color: var(--Dark-Blue);
+  text-align: center;
 }
 
 @media (max-width: 1150px) {
@@ -215,6 +238,16 @@ body {
   }
   .text-box {
     max-width: 68rem !important;
+  }
+  .about-section {
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 68rem;
+    padding: 6rem 0;
+  }
+  .col1,
+.col2 {
+    padding: 6rem 7%;
   }
 }
 @media (max-width: 450px) {
