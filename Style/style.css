@@ -13,6 +13,10 @@ html {
   font-family: "Be Vietnam Pro", sans-serif;
 }
 
+body {
+  position: relative;
+}
+
 :root {
   --Bright-Red: hsl(12, 88%, 59%);
   --Dark-Blue: hsl(228, 39%, 23%);
@@ -108,6 +112,12 @@ html {
   color: var(--DarkGrayish-Blue);
   transition: all linear 0.3s;
 }
+.header .hamburger {
+  display: none;
+}
+.header .hamburger i {
+  font-size: 4rem;
+}
 
 .hero-section {
   max-width: 1440px;
@@ -141,14 +151,49 @@ html {
   .heading-primary {
     font-size: 4.8rem;
   }
+  .rightBgPattern {
+    top: -24%;
+  }
 }
 @media (max-width: 1000px) {
   html {
     font-size: 55%;
   }
 }
+@media (max-width: 850px) {
+  .header .nav-menus,
+.ctabtn {
+    display: none;
+  }
+  .hamburger {
+    display: block !important;
+  }
+  .header,
+.hero-section {
+    padding: 4rem 7%;
+  }
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .text-box {
+    max-width: 68rem !important;
+  }
+}
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .header,
+.hero-section {
+    padding: 4rem 4%;
+  }
+  .rightBgPattern {
+    top: -90%;
+    right: -4.5%;
+    width: 85%;
+    height: 500px;
+  }
+  .hero {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
