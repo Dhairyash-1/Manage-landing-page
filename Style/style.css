@@ -15,6 +15,7 @@ html {
 
 body {
   position: relative;
+  overflow: hidden;
 }
 
 :root {
@@ -33,12 +34,13 @@ body {
 }
 
 .heading-secondary {
-  font-size: 4.4;
+  font-size: 3.6rem;
   line-height: 1.2;
+  margin-bottom: 3.2rem;
 }
 
 .heading-tertiary {
-  font-size: 3rem;
+  font-size: 2.2rem;
   line-height: 1.2;
   margin-bottom: 3.2rem;
 }
@@ -143,6 +145,41 @@ body {
   width: 100%;
 }
 
+.about-section {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 4rem 7%;
+  display: flex;
+  gap: 15rem;
+}
+.about-section .col1 .heading-secondary {
+  color: var(--Dark-Blue);
+}
+.about-section .col1 .paragraph {
+  color: var(--DarkGrayish-Blue);
+}
+.about-section .col2 .row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.about-section .col2 .row .num {
+  border: none;
+  outline: none;
+  background: var(--Bright-Red);
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  color: var(--VaryLight-Gray);
+  font-size: 1.6rem;
+  margin-right: 2.5rem;
+}
+.about-section .col2 .row .details .heading-tertiary {
+  color: var(--Dark-Blue);
+}
+.about-section .col2 .row .details .paragraph {
+  color: var(--DarkGrayish-Blue);
+}
+
 @media (max-width: 1150px) {
   .header,
 .hero-section {
@@ -151,9 +188,6 @@ body {
   .heading-primary {
     font-size: 4.8rem;
   }
-  .rightBgPattern {
-    top: -24%;
-  }
 }
 @media (max-width: 1000px) {
   html {
@@ -161,6 +195,10 @@ body {
   }
 }
 @media (max-width: 850px) {
+  .rightBgPattern {
+    width: 73%;
+    height: 665px;
+  }
   .header .nav-menus,
 .ctabtn {
     display: none;
@@ -188,10 +226,9 @@ body {
     padding: 4rem 4%;
   }
   .rightBgPattern {
-    top: -90%;
-    right: -4.5%;
+    right: -5.5%;
     width: 85%;
-    height: 500px;
+    height: 622px;
   }
   .hero {
     text-align: center;
