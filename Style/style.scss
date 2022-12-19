@@ -195,22 +195,32 @@ svg:hover path {
   }
   .col2 .row {
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    .num {
-      border: none;
-      outline: none;
-      background: var(--Bright-Red);
-      padding: 1rem 2.5rem;
-      border-radius: 2rem;
-      color: var(--VaryLight-Gray);
-      font-size: 1.6rem;
-      margin-right: 2.5rem;
-    }
-    .details {
+    .num-box {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
       .heading-tertiary {
+        margin-top: 1rem;
         color: var(--Dark-Blue);
       }
+
+      .num {
+        border: none;
+        outline: none;
+        background: var(--Bright-Red);
+        padding: 1rem 2.5rem;
+        border-radius: 2rem;
+        color: var(--VaryLight-Gray);
+        font-size: 1.6rem;
+        margin-right: 2.5rem;
+      }
+    }
+    .details {
+      padding-left: 10rem;
+
       .paragraph {
         color: var(--DarkGrayish-Blue);
       }
@@ -381,6 +391,30 @@ svg:hover path {
     gap: 3rem;
     max-width: 68rem;
     padding: 6rem 0;
+    .col2 {
+      .row {
+        .num-box {
+          background: var(--VeryPale-Red);
+          margin-bottom: 3.2rem;
+          display: flex;
+          justify-content: start;
+          width: 100%;
+          border-radius: 2rem;
+          .num {
+            margin-right: 1rem;
+          }
+          .heading-tertiary {
+            margin-bottom: 0;
+          }
+        }
+        .details {
+          padding-left: 0;
+          .heading-tertiary {
+            margin-top: 0;
+          }
+        }
+      }
+    }
   }
 
   .footer-section {
@@ -429,10 +463,10 @@ svg:hover path {
     font-size: 2.6rem;
   }
   .heading-tertiary {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .paragraph {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   .header,
   .hero-section,
@@ -459,5 +493,11 @@ svg:hover path {
         }
       }
     }
+  }
+}
+
+@media (max-width: 675px) {
+  .about-section {
+    padding: 6rem 6%;
   }
 }
