@@ -18,6 +18,14 @@ body {
   overflow: hidden;
 }
 
+svg:hover {
+  fill: var(--Bright-Red);
+}
+
+svg:hover path {
+  fill: var(--Bright-Red);
+}
+
 :root {
   --Bright-Red: hsl(12, 88%, 59%);
   --Dark-Blue: hsl(228, 39%, 23%);
@@ -222,11 +230,11 @@ body {
   align-items: flex-start;
   gap: 8rem;
 }
-.footer-section .footer .col1 .icon-box img {
+.footer-section .footer .col1 .icon-box svg {
   width: 2.5rem;
   margin-right: 1rem;
 }
-.footer-section .footer .col1 .icon-box img:last-child {
+.footer-section .footer .col1 .icon-box svg:last-child {
   margin: 0;
 }
 .footer-section .footer .col2 {
@@ -252,14 +260,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
   gap: 8rem;
 }
 .footer-section .footer .col3 .search-box {
-  width: 31rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
 }
 .footer-section .footer .col3 .search-box input[type=text] {
   width: 75%;
@@ -279,7 +286,7 @@ body {
   color: var(--DarkGrayish-Blue);
 }
 .footer-section .footer .col3 .search-box input[type=button] {
-  width: 22%;
+  width: 25%;
   border: none;
   outline: none;
   background: var(--Bright-Red);
@@ -287,7 +294,6 @@ body {
   border-radius: 2.5rem;
   color: var(--VaryLight-Gray);
   font-size: 1.6rem;
-  margin-left: 2.5rem;
   height: 4.5rem;
 }
 .footer-section .footer .col3 .copyright {
@@ -342,32 +348,38 @@ body {
     max-width: 68rem;
     padding: 6rem 0;
   }
-  .col1,
-.col2 {
-    padding: 6rem 7%;
-  }
   .footer-section .footer {
     display: flex;
     flex-direction: column-reverse;
     gap: 5rem;
     align-items: center;
+    padding: 0 12%;
   }
   .footer-section .footer .col1 {
     flex-direction: column-reverse;
     width: 100%;
     align-items: center;
   }
-  .footer-section .footer .col1 .icon-box img {
-    margin-right: 2rem;
+  .footer-section .footer .col1 .icon-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-section .footer .col1 .icon-box svg {
+    width: 4rem;
   }
   .footer-section .footer .col2 {
     gap: 8rem;
+    width: 100%;
+  }
+  .footer-section .footer .col3 {
+    width: 100%;
   }
   .footer-section .footer .col3 .copyright p {
     text-align: center !important;
   }
 }
-@media (max-width: 850px) and (max-width: 450px) {
+@media (max-width: 450px) {
   html {
     font-size: 50%;
   }
@@ -382,5 +394,11 @@ body {
   }
   .hero {
     text-align: center;
+  }
+  .footer-section .footer {
+    padding: 0 4%;
+  }
+  .footer-section .footer .col1 .icon-box svg {
+    width: 10%;
   }
 }/*# sourceMappingURL=style.css.map */
