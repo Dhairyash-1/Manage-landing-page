@@ -275,6 +275,9 @@ svg:hover path {
           text-decoration: none;
           color: var(--VaryLight-Gray);
           margin-bottom: 2rem;
+          &:hover {
+            color: var(--Bright-Red);
+          }
         }
       }
     }
@@ -287,7 +290,6 @@ svg:hover path {
       gap: 8rem;
 
       .search-box {
-        // width: 31rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -312,8 +314,11 @@ svg:hover path {
           border-radius: 2.5rem;
           color: var(--VaryLight-Gray);
           font-size: 1.6rem;
-          // margin-left: 2.5rem;
           height: 4.5rem;
+          &:hover {
+            opacity: 0.7;
+            transition: all 0.3s linear;
+          }
         }
       }
       .copyright {
@@ -328,10 +333,14 @@ svg:hover path {
   }
 }
 
+// --------------------------------------------------------------------------------
+
 // --------Responsive Media Queries start here---------
+
 @media (max-width: 1150px) {
   .header,
   .hero-section,
+  .about-section,
   .footer-section {
     padding: 4rem 4%;
   }
@@ -413,9 +422,22 @@ svg:hover path {
   html {
     font-size: 50%;
   }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .heading-secondary {
+    font-size: 2.6rem;
+  }
+  .heading-tertiary {
+    font-size: 1.8rem;
+  }
+  .paragraph {
+    font-size: 1.6rem;
+  }
   .header,
-  .hero-section {
-    padding: 4rem 4%;
+  .hero-section,
+  .about-section {
+    padding: 4rem 8%;
   }
   .rightBgPattern {
     right: -5.5%;

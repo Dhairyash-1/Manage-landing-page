@@ -255,6 +255,9 @@ svg:hover path {
   color: var(--VaryLight-Gray);
   margin-bottom: 2rem;
 }
+.footer-section .footer .col2 .nav-links a:hover {
+  color: var(--Bright-Red);
+}
 .footer-section .footer .col3 {
   height: 100%;
   display: flex;
@@ -296,6 +299,10 @@ svg:hover path {
   font-size: 1.6rem;
   height: 4.5rem;
 }
+.footer-section .footer .col3 .search-box input[type=button]:hover {
+  opacity: 0.7;
+  transition: all 0.3s linear;
+}
 .footer-section .footer .col3 .copyright {
   width: 100%;
 }
@@ -308,6 +315,7 @@ svg:hover path {
 @media (max-width: 1150px) {
   .header,
 .hero-section,
+.about-section,
 .footer-section {
     padding: 4rem 4%;
   }
@@ -383,9 +391,22 @@ svg:hover path {
   html {
     font-size: 50%;
   }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .heading-secondary {
+    font-size: 2.6rem;
+  }
+  .heading-tertiary {
+    font-size: 1.8rem;
+  }
+  .paragraph {
+    font-size: 1.6rem;
+  }
   .header,
-.hero-section {
-    padding: 4rem 4%;
+.hero-section,
+.about-section {
+    padding: 4rem 8%;
   }
   .rightBgPattern {
     right: -5.5%;
