@@ -251,6 +251,8 @@ svg:hover path {
 .cta-section {
   width: 100%;
   background: var(--Bright-Red);
+  position: relative;
+  overflow-y: hidden;
 }
 .cta-section .cta {
   max-width: 1440px;
@@ -269,6 +271,23 @@ svg:hover path {
   color: var(--Bright-Red);
   font-weight: 700;
   font-size: 1.4rem;
+}
+.cta-section .cta .btn:hover {
+  background: var(--VaryLight-Gray);
+  color: var(--Bright-Red);
+  opacity: 1;
+}
+.cta-section .overlay {
+  background: url(../images/bg-simplify-section-desktop.svg);
+  background-position: bottom left;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  width: 85%;
+  height: 240px;
+  display: block;
+  margin: 0 auto;
 }
 
 .footer-section {
@@ -435,6 +454,10 @@ svg:hover path {
   }
   .about-section .col2 .row .details .heading-tertiary {
     margin-top: 0;
+  }
+  .cta {
+    flex-direction: column;
+    text-align: center;
   }
   .footer-section .footer {
     display: flex;
