@@ -94,8 +94,8 @@ svg:hover path {
   background-position: top right;
   background-size: cover;
   position: absolute;
-  top: 68%;
-  left: -24%;
+  top: 58%;
+  left: -28%;
   z-index: -1;
   width: 45%;
   height: 550px;
@@ -214,11 +214,61 @@ svg:hover path {
 .testimonial {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 6rem 7%;
+  padding: 8rem 0;
+  text-align: center;
+}
+.testimonial .btn {
+  margin-top: 6rem;
 }
 .testimonial .heading-secondary {
   color: var(--Dark-Blue);
   text-align: center;
+}
+.testimonial .testimonial-containner {
+  display: flex;
+  gap: 2rem;
+  margin-top: 15rem;
+}
+.testimonial .testimonial-containner .testimonial-box {
+  background: var(--VaryLight-Gray);
+  text-align: center;
+  padding: 1rem 2rem;
+}
+.testimonial .testimonial-containner .testimonial-box img {
+  margin-top: -5rem;
+  width: 80px;
+  height: 80px;
+}
+.testimonial .testimonial-containner .testimonial-box h4 {
+  color: var(--Dark-Blue);
+  margin: 2rem 0;
+}
+.testimonial .testimonial-containner .testimonial-box p {
+  color: var(--DarkGrayish-Blue);
+  font-size: 1.6rem;
+}
+
+.cta-section {
+  width: 100%;
+  background: var(--Bright-Red);
+}
+.cta-section .cta {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 6rem 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cta-section .cta h2 {
+  color: var(--VaryLight-Gray);
+  max-width: 450px;
+}
+.cta-section .cta .btn {
+  background: var(--VaryLight-Gray);
+  color: var(--Bright-Red);
+  font-weight: 700;
+  font-size: 1.4rem;
 }
 
 .footer-section {
