@@ -101,6 +101,11 @@ svg:hover path {
   height: 550px;
 }
 
+.swiper-pagination {
+  bottom: 818px !important;
+  display: none;
+}
+
 .header {
   max-width: 144rem;
   margin: 0 auto;
@@ -226,24 +231,27 @@ svg:hover path {
 }
 .testimonial .testimonial-containner {
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+}
+.testimonial .testimonial-containner .swiper-wrapper {
+  display: flex;
   margin-top: 15rem;
 }
-.testimonial .testimonial-containner .testimonial-box {
+.testimonial .testimonial-containner .swiper-wrapper .testimonial-box {
   background: var(--VaryLight-Gray);
   text-align: center;
   padding: 1rem 2rem;
 }
-.testimonial .testimonial-containner .testimonial-box img {
+.testimonial .testimonial-containner .swiper-wrapper .testimonial-box img {
   margin-top: -5rem;
   width: 80px;
   height: 80px;
 }
-.testimonial .testimonial-containner .testimonial-box h4 {
+.testimonial .testimonial-containner .swiper-wrapper .testimonial-box h4 {
   color: var(--Dark-Blue);
   margin: 2rem 0;
 }
-.testimonial .testimonial-containner .testimonial-box p {
+.testimonial .testimonial-containner .swiper-wrapper .testimonial-box p {
   color: var(--DarkGrayish-Blue);
   font-size: 1.6rem;
 }
@@ -518,6 +526,9 @@ svg:hover path {
   }
   .hero {
     text-align: center;
+  }
+  .swiper-pagination {
+    display: block;
   }
   .footer-section .footer {
     padding: 0 4%;

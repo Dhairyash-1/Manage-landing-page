@@ -98,6 +98,10 @@ svg:hover path {
   width: 45%;
   height: 550px;
 }
+.swiper-pagination {
+  bottom: 818px !important;
+  display: none;
+}
 
 // ------Header section starts here-------
 
@@ -245,25 +249,29 @@ svg:hover path {
 
   .testimonial-containner {
     display: flex;
-    gap: 2rem;
-    margin-top: 15rem;
-    .testimonial-box {
-      background: var(--VaryLight-Gray);
-      text-align: center;
-      padding: 1rem 2rem;
+    flex-direction: column;
+    .swiper-wrapper {
+      display: flex;
+      // gap: 2rem;
+      margin-top: 15rem;
+      .testimonial-box {
+        background: var(--VaryLight-Gray);
+        text-align: center;
+        padding: 1rem 2rem;
 
-      img {
-        margin-top: -5rem;
-        width: 80px;
-        height: 80px;
-      }
-      h4 {
-        color: var(--Dark-Blue);
-        margin: 2rem 0;
-      }
-      p {
-        color: var(--DarkGrayish-Blue);
-        font-size: 1.6rem;
+        img {
+          margin-top: -5rem;
+          width: 80px;
+          height: 80px;
+        }
+        h4 {
+          color: var(--Dark-Blue);
+          margin: 2rem 0;
+        }
+        p {
+          color: var(--DarkGrayish-Blue);
+          font-size: 1.6rem;
+        }
       }
     }
   }
@@ -559,6 +567,9 @@ svg:hover path {
   }
   .hero {
     text-align: center;
+  }
+  .swiper-pagination {
+    display: block;
   }
   .footer-section {
     .footer {
