@@ -1,40 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
-*,
-::after,
-::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-  font-family: "Be Vietnam Pro", sans-serif;
-}
-
-body {
-  position: relative;
-  overflow: hidden;
-}
-
-svg:hover {
-  fill: var(--Bright-Red);
-}
-
-svg:hover path {
-  fill: var(--Bright-Red);
-}
-
-:root {
-  --Bright-Red: hsl(12, 88%, 59%);
-  --Dark-Blue: hsl(228, 39%, 23%);
-  --DarkGrayish-Blue: hsl(227, 12%, 61%);
-  --VeryDark-Blue: hsl(233, 12%, 13%);
-  --VeryPale-Red: hsl(13, 100%, 96%);
-  --VaryLight-Gray: hsl(0, 0%, 98%);
-}
-
 .heading-primary {
   font-size: 5.2rem;
   line-height: 1.05;
@@ -57,21 +21,6 @@ svg:hover path {
   font-size: 1.8rem;
   line-height: 1.5;
   margin-bottom: 3.2rem;
-}
-
-.btn {
-  font-size: 1.6rem;
-  background-color: var(--Bright-Red);
-  color: var(--VaryLight-Gray);
-  border: none;
-  outline: none;
-  border-radius: 2.8rem;
-  padding: 1.4rem 2.8rem;
-  box-shadow: 1.5px 3px 8px var(--Bright-Red);
-}
-.btn:hover {
-  transition: all linear 0.3s;
-  opacity: 0.7;
 }
 
 .rightBgPattern {
@@ -101,18 +50,14 @@ svg:hover path {
   height: 550px;
 }
 
-.swiper-pagination {
-  bottom: 818px !important;
-  display: none;
-}
-
 .header {
   max-width: 144rem;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 4rem 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
 }
 .header .logo {
   background-repeat: no-repeat;
@@ -140,6 +85,9 @@ svg:hover path {
   color: var(--DarkGrayish-Blue);
   transition: all linear 0.3s;
 }
+.header .nav-mobile {
+  display: none;
+}
 .header .hamburger {
   display: none;
 }
@@ -147,8 +95,35 @@ svg:hover path {
   font-size: 4rem;
 }
 
+@media (max-width: 850px) {
+  .header .nav-show {
+    left: -100%;
+  }
+  .header .nav-mobile {
+    position: absolute;
+    top: 4%;
+    right: 10%;
+    gap: 3rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(0deg, 0%, 98%);
+    flex-direction: column;
+    max-width: 80%;
+    width: 100%;
+    height: 40rem;
+    transition: all 0.6s ease-in;
+  }
+  .header .nav-mobile a {
+    text-decoration: none;
+    font-size: 2.4rem;
+    color: var(--Dark-Blue);
+    font-weight: 900;
+  }
+}
 .hero-section {
-  max-width: 1440px;
+  max-width: 144rem;
   margin: 0 auto;
   padding: 4rem 7%;
 }
@@ -216,46 +191,6 @@ svg:hover path {
   color: var(--DarkGrayish-Blue);
 }
 
-.testimonial {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 8rem 0;
-  text-align: center;
-}
-.testimonial .btn {
-  margin-top: 6rem;
-}
-.testimonial .heading-secondary {
-  color: var(--Dark-Blue);
-  text-align: center;
-}
-.testimonial .testimonial-containner {
-  display: flex;
-  flex-direction: column;
-}
-.testimonial .testimonial-containner .swiper-wrapper {
-  display: flex;
-  margin-top: 15rem;
-}
-.testimonial .testimonial-containner .swiper-wrapper .testimonial-box {
-  background: var(--VaryLight-Gray);
-  text-align: center;
-  padding: 1rem 2rem;
-}
-.testimonial .testimonial-containner .swiper-wrapper .testimonial-box img {
-  margin-top: -5rem;
-  width: 80px;
-  height: 80px;
-}
-.testimonial .testimonial-containner .swiper-wrapper .testimonial-box h4 {
-  color: var(--Dark-Blue);
-  margin: 2rem 0;
-}
-.testimonial .testimonial-containner .swiper-wrapper .testimonial-box p {
-  color: var(--DarkGrayish-Blue);
-  font-size: 1.6rem;
-}
-
 .cta-section {
   width: 100%;
   background: var(--Bright-Red);
@@ -296,6 +231,46 @@ svg:hover path {
   height: 240px;
   display: block;
   margin: 0 auto;
+}
+
+.testimonial {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 8rem 0;
+  text-align: center;
+}
+.testimonial .btn {
+  margin-top: 6rem;
+}
+.testimonial .heading-secondary {
+  color: var(--Dark-Blue);
+  text-align: center;
+}
+.testimonial .testimonial-containner {
+  display: flex;
+  flex-direction: column;
+}
+.testimonial .testimonial-containner .swiper-wrapper {
+  display: flex;
+  margin-top: 15rem;
+}
+.testimonial .testimonial-containner .swiper-wrapper .testimonial-box {
+  background: var(--VaryLight-Gray);
+  text-align: center;
+  padding: 1rem 2rem;
+}
+.testimonial .testimonial-containner .swiper-wrapper .testimonial-box img {
+  margin-top: -5rem;
+  width: 80px;
+  height: 80px;
+}
+.testimonial .testimonial-containner .swiper-wrapper .testimonial-box h4 {
+  color: var(--Dark-Blue);
+  margin: 2rem 0;
+}
+.testimonial .testimonial-containner .swiper-wrapper .testimonial-box p {
+  color: var(--DarkGrayish-Blue);
+  font-size: 1.6rem;
 }
 
 .footer-section {
@@ -397,6 +372,62 @@ svg:hover path {
   font-size: 1.2rem;
   color: var(--DarkGrayish-Blue);
   text-align: end;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+}
+
+svg:hover {
+  fill: var(--Bright-Red);
+}
+
+svg:hover path {
+  fill: var(--Bright-Red);
+}
+
+:root {
+  --Bright-Red: hsl(12, 88%, 59%);
+  --Dark-Blue: hsl(228, 39%, 23%);
+  --DarkGrayish-Blue: hsl(227, 12%, 61%);
+  --VeryDark-Blue: hsl(233, 12%, 13%);
+  --VeryPale-Red: hsl(13, 100%, 96%);
+  --VaryLight-Gray: hsl(0, 0%, 98%);
+}
+
+.btn {
+  font-size: 1.6rem;
+  background-color: var(--Bright-Red);
+  color: var(--VaryLight-Gray);
+  border: none;
+  outline: none;
+  border-radius: 2.8rem;
+  padding: 1.4rem 2.8rem;
+  box-shadow: 1.5px 3px 8px var(--Bright-Red);
+}
+.btn:hover {
+  transition: all linear 0.3s;
+  opacity: 0.7;
+}
+
+.swiper-pagination {
+  bottom: 818px !important;
+  display: none;
 }
 
 @media (max-width: 1150px) {

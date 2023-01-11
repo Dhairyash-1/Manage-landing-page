@@ -1,0 +1,26 @@
+@import "mixins";
+.hero-section {
+  @include displayFullWidth;
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+    .hero-description {
+      .text-box {
+        max-width: 47rem;
+        .heading-primary {
+          color: var(--Dark-Blue);
+        }
+        .paragraph {
+          color: var(--DarkGrayish-Blue);
+        }
+      }
+    }
+    .hero-image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

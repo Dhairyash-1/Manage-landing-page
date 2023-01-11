@@ -1,0 +1,10 @@
+@mixin displayFullWidth() {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 4rem 7%;
+}
+@mixin flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
