@@ -1,9 +1,16 @@
 const hamburger = document.querySelector(".hamburger");
 const mobilenav = document.querySelector(".nav-mobile");
-const iconSwitch = document.querySelector(".iconsSwitch");
-console.log(iconSwitch);
-hamburger.addEventListener("click", () => {
+const overlay = document.querySelector(".overlayBg");
+
+function showNav() {
   mobilenav.classList.toggle("nav-show");
-  // iconSwitch.classList.remove("uli-bars");
-  // iconSwitch.classList.add("uli-times");
+}
+
+hamburger.addEventListener("click", showNav);
+overlay.addEventListener("click", showNav);
+
+const iconChange = document.querySelector(".iconChange");
+iconChange.addEventListener("click", () => {
+  iconChange.classList.toggle("uil-bars");
+  iconChange.classList.toggle("uil-times");
 });
