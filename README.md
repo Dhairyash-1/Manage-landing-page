@@ -16,7 +16,7 @@ This is a solution to the [Manage landing page challenge on Frontend Mentor](htt
 - [Author](#author)
 <!-- - [Acknowledgments](#acknowledgments) -->
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+
 
 ## Overview
 
@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [solution URL here](https://your-solution-url.com)
 - Live Site URL: [See Live Site](https://dhairyash-1.github.io/Manage-landing-page/)
 
 ## My process
@@ -55,8 +55,8 @@ Users should be able to:
 
 - During this project I have learn the css preprocessor sass.
 - I have learn different sass features like nesting,mixinis and modules
-- By using sass modules i am able to split css files into different components
-- I learn how to change svg image color on hover
+- By using sass modules i am able to split main css files into different css components files
+- I learn very basic that i don't know how to change svg image color on hover
 
 <!-- Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
