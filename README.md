@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/manage-landing-page-G6aDLxE62R)
 - Live Site URL: [See Live Site](https://dhairyash-1.github.io/Manage-landing-page/)
 
 ## My process
@@ -97,4 +97,4 @@ Use this section to outline areas that you want to continue focusing on in futur
 ## Author
 
 - Website - [Dhairyash Gupta](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Dhairyash-1](https://www.frontendmentor.io/profile/yourusername)
