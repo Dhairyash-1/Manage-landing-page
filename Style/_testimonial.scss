@@ -13,12 +13,10 @@
   }
 
   .testimonial-containner {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    padding: 50px 20px;
+    margin-top: 7rem;
     .swiper-wrapper {
-      display: flex;
-      // gap: 2rem;
-      margin-top: 15rem;
       .testimonial-box {
         background: var(--VaryLight-Gray);
         text-align: center;

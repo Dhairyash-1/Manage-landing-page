@@ -22,7 +22,6 @@ html {
   font-family: "Be Vietnam Pro", sans-serif;
 }
 body {
-  position: relative;
   overflow: hidden;
 }
 
@@ -59,17 +58,11 @@ svg:hover path {
   }
 }
 
-.swiper-pagination {
-  bottom: 818px !important;
-  display: none;
-}
-
 // --------Responsive Media Queries start here---------
 
 @media (max-width: 1150px) {
   .header,
   .hero-section,
-  .about-section,
   .footer-section {
     padding: 4rem 4%;
   }
@@ -205,9 +198,7 @@ svg:hover path {
   .hero {
     text-align: center;
   }
-  .swiper-pagination {
-    display: block;
-  }
+
   .footer-section {
     .footer {
       padding: 0 4%;

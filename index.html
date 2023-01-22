@@ -42,7 +42,7 @@
         <a href="">Careers</a>
         <a href="">Community</a>
       </nav>
-      <div class="hamburger"><i class="uil uil-bars"></i></div>
+      <div class="hamburger"><i class="iconsSwitch uil uil-bars"></i></div>
       <div class="ctabtn">
         <button class="btn">Get Started</button>
       </div>
@@ -126,6 +126,7 @@
           </div>
         </div>
       </div>
+      <div class="leftBgPattern"></div>
     </section>
 
     <!-- ---------------------------------------------------------------- -->
@@ -172,14 +173,15 @@
             <img src="images/avatar-shanai.png" alt="" />
             <h4 class="heading-tertiary">Shanai Gough</h4>
             <p class="paragraph">
-              “Their software allows us to track, manage and collaborate on our
-              projects from anywhere. It keeps the whole team in-sync without
-              being intrusive.”
+              “Their software allows us to track, manage our projects from
+              anywhere. It keeps the whole team in-sync without being
+              intrusive.”
             </p>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="swiper-pagination"></div>
+
       <button class="btn">Get Started</button>
     </section>
 
@@ -280,42 +282,11 @@
     <!-- ---------------------------------------------------------------- -->
 
     <div class="rightBgPattern"></div>
-    <div class="leftBgPattern"></div>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        slidesPerView: 3,
-        loop: true,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          0: {
-            slidesPerView: 1,
-          },
-          550: {
-            slidesPerView: 2,
-          },
-          950: {
-            slidesPerView: 3,
-          },
-        },
-      });
-    </script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>
