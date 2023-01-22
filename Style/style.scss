@@ -20,6 +20,7 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
   font-family: "Be Vietnam Pro", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   overflow: hidden;
@@ -70,6 +71,9 @@ svg:hover path {
 .hidden {
   display: none;
 }
+.swiper-pagination-bullets {
+  display: none;
+}
 
 // --------Responsive Media Queries start here---------
 
@@ -93,6 +97,9 @@ svg:hover path {
   .rightBgPattern {
     width: 73%;
     height: 665px;
+  }
+  .swiper-pagination-bullets {
+    display: block;
   }
   .header .nav-menus,
   .ctabtn {

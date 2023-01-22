@@ -14,3 +14,8 @@ iconChange.addEventListener("click", () => {
   iconChange.classList.toggle("uil-bars");
   iconChange.classList.toggle("uil-times");
 });
+
+const submit = document.getElementById("submit");
+const email = document.getElementById("email");
+
+submit.addEventListener("click", () => {});

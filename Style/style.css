@@ -332,7 +332,7 @@
   align-items: center;
   gap: 2rem;
 }
-.footer-section .footer .col3 .search-box input[type=text] {
+.footer-section .footer .col3 .search-box input[type=email] {
   width: 75%;
   border-radius: 5rem;
   height: 4.5rem;
@@ -340,16 +340,16 @@
   outline: none;
   padding-left: 2rem;
 }
-.footer-section .footer .col3 .search-box input[type=text]::-moz-placeholder {
+.footer-section .footer .col3 .search-box input[type=email]::-moz-placeholder {
   color: var(--DarkGrayish-Blue);
 }
-.footer-section .footer .col3 .search-box input[type=text]:-ms-input-placeholder {
+.footer-section .footer .col3 .search-box input[type=email]:-ms-input-placeholder {
   color: var(--DarkGrayish-Blue);
 }
-.footer-section .footer .col3 .search-box input[type=text]::placeholder {
+.footer-section .footer .col3 .search-box input[type=email]::placeholder {
   color: var(--DarkGrayish-Blue);
 }
-.footer-section .footer .col3 .search-box input[type=button] {
+.footer-section .footer .col3 .search-box input[type=submit] {
   width: 25%;
   border: none;
   outline: none;
@@ -360,7 +360,7 @@
   font-size: 1.6rem;
   height: 4.5rem;
 }
-.footer-section .footer .col3 .search-box input[type=button]:hover {
+.footer-section .footer .col3 .search-box input[type=submit]:hover {
   opacity: 0.7;
   transition: all 0.3s linear;
 }
@@ -385,6 +385,7 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
   font-family: "Be Vietnam Pro", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -439,6 +440,10 @@ svg:hover path {
   display: none;
 }
 
+.swiper-pagination-bullets {
+  display: none;
+}
+
 @media (max-width: 1150px) {
   .header,
 .hero-section,
@@ -458,6 +463,9 @@ svg:hover path {
   .rightBgPattern {
     width: 73%;
     height: 665px;
+  }
+  .swiper-pagination-bullets {
+    display: block;
   }
   .header .nav-menus,
 .ctabtn {

@@ -61,7 +61,7 @@
         justify-content: space-between;
         align-items: center;
         gap: 2rem;
-        input[type="text"] {
+        input[type="email"] {
           width: 75%;
           border-radius: 5rem;
           height: 4.5rem;
@@ -72,7 +72,7 @@
             color: var(--DarkGrayish-Blue);
           }
         }
-        input[type="button"] {
+        input[type="submit"] {
           width: 25%;
           border: none;
           outline: none;
