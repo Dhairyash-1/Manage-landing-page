@@ -97,4 +97,4 @@ Use this section to outline areas that you want to continue focusing on in futur
 ## Author
 
 - Website - [Dhairyash Gupta](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Dhairyash-1](https://www.frontendmentor.io/profile/Dhairyash-1)
