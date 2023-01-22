@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL here](https://your-solution-url.com)
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/manage-landing-page-G6aDLxE62R)
 - Live Site URL: [See Live Site](https://dhairyash-1.github.io/Manage-landing-page/)
 
 ## My process
