@@ -4,6 +4,7 @@ var swiper = new Swiper(".mySwiper", {
   centerSlide: "true",
   // slidesPerGroup: 3,
   loop: true,
+  grabCursor: true,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,

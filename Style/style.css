@@ -70,29 +70,33 @@
   justify-content: center;
   align-items: center;
 }
-.header .nav-menus a {
+.header .nav-menus li {
+  margin-right: 4rem;
+  list-style: none;
+}
+.header .nav-menus li a {
   text-decoration: none;
   font-size: 1.6rem;
-  margin-right: 1rem;
   color: var(--Dark-Blue);
   font-weight: 500;
-  margin-right: 4rem;
 }
-.header .nav-menus a:last-child {
-  margin-right: 0;
-}
-.header .nav-menus a:hover {
+.header .nav-menus li a:hover {
   color: var(--DarkGrayish-Blue);
   transition: all linear 0.3s;
+}
+.header .nav-menus li:last-child {
+  margin-right: 0;
 }
 .header .nav-mobile {
   display: none;
 }
 .header .hamburger {
   display: none;
+  background: transparent;
+  border: none;
 }
 .header .hamburger i {
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 @media (max-width: 850px) {
